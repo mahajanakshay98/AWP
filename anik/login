@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<style>
+fieldset {
+  
+  margin-left: 23%;
+  margin-right: 23%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  padding-top: 2%;
+  padding-bottom: 3%;
+  padding-left: 3%;
+  padding-right: 0%;
+  border: 2px groove (internal value);
+}
+label {
+	
+  font-family: "Bradley Hand ITC";
+  font-weight: bold;
+  color: #ffb31a;
+
+}
+
+
+
+</style>
+</head>
+<body>
+
+<a href="new 1.html" target="a">
+<img src="kal.jpg" align="right" width="15%" height="5%" />
+<iframe name="a" width="30%" height="200">
+
+</iframe>
+</a>
+
+
+
+
+
+
+<form autocomplete="on" action="1.html" method="get">
+<fieldset style="background-color:black;">
+<legend align="center" style="font-family:Bradley Hand ITC; font-weight: bold; color:#ffb31a;  font-size: 600%;">PH</legend>
+<label>First Name: </label>
+<input type="text" autofocus required autocomplete pattern="[a-zA-Z]{3,8}" name="fname" /></br>
+</br>
+
+
+<label>Last Name: </label>
+<input type="text" autofocus required autocomplete pattern="[a-zA-Z]{4,10}" name="lname" /><br/>
+<br/>
+
+<label> Age: </label>
+<input type="number"  autocomplete required name="age" min="18" max="101" /><br/>
+<br/>
+
+<label> Date of Birth: </label>
+<input type="date"  autocomplete required name="dob"  /><br/>
+<br/>
+
+<label> Mobile: </label>
+<input type="text"   required name="Contact" pattern="[0-9]{10}" /><br/>
+<br/>
+
+<label> Address: </label>
+<textarea  required name="Add" rows="8" cols="15" maxlength="25"/></textarea><br/>
+<br/>
+
+<label> Pincode: </label>
+<input type="number"  autocomplete required name="Postalcode" pattern="[0-9]{6}" /><br/>
+<br/>
+
+<label> Education: </label>
+<select  name="Education"   required   /><br/>
+	<option value="-1">select</option>
+	<option value="1">BE</option>
+	<option value="2">HSC</option>
+	<option value="3">SSC</option>
+</select>
+<br/>
+<br/>
+<pre>
+<label> Hobbies: </label>&nbsp;
+	<input type="checkbox" name="hobby" value="Cricket" /><label>Cricket</label>
+	<input type="checkbox" name="hobby" value="Swimming" /><label>Swimming</label>
+	<input type="checkbox" name="hobby" value="TT" /><label>TT</label>
+
+</pre>
+<pre>
+<label> Gender:</label>
+	<input type="radio" name="sex" value="M" /><label>Male</label>
+	<input type="radio" name="sex" value="F" /><label>Female</label>
+</pre>
+<br/>
+
+<label> Email :</label>
+<input type="email" name="email" />
+<br/>
+
+<form enctype="multipart/form-data" action="a.php" method="post"><br/>
+<input type="file" name="f"/><br/>
+<input type="hidden" name="mumele" value="gud"/>
+<br/>
+
+
+<input type="submit" value="submitinquery">
+<br/>
+<input type="submit" formmethod="post" formtarget="_blank" formaction="">
+</fieldset>
+</form>
+
+</body>
+</html>

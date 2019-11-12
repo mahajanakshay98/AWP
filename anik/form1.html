@@ -1,0 +1,165 @@
+  
+		<html>
+		<head>
+		<title>form</title>
+		<style type="text/css">
+        input[type=text], select, textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+/* Style the label to display next to the inputs */
+label {
+text-transform:capitalize
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+/* Style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+/* Style the container */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+		</head>
+		<body>
+		<div class="container">
+		<form action="db.php" method="post" onsubmit="return true">
+		<fieldset>
+		
+		<legend align="center">Personal Information</legend>
+		<div class="row">
+        <div class="col-25">
+		<label for="first_name">First Name</label>
+		</div>
+        <div class="col-75">
+		<input autofocus="autofocus" name="fname" id="id_fname"/><br>
+		</div>
+        </div>
+    <div class="row">
+      <div class="col-25">
+		<label for="last_name">last Name</label>
+		</div>
+        <div class="col-75">
+		<input  name="lname" id="id_lname"/><br>
+		</div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label for="age">age</label>
+		 </div>
+      <div class="col-75">
+		<input type="number" name="age" id="id_age" min="18" max="100"/><br>
+		</div>
+        </div>
+	
+    <div class="row">
+      <div class="col-25"><label for="DOB">DOB</label>
+		 </div>
+      <div class="col-75">
+		<input type="date" name="DOB" id="id_DOB"/><br>
+		</div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label>Gender</label>
+         </div>
+      <div class="col-75">
+        <input type="radio" name="gender" value="male" checked/> Male
+        <input type="radio" name="gender" value="female"/> Female
+        <input type="radio" name="gender" value="other"/> Other<br>
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label>Telephone:</label>
+         </div>
+      <div class="col-75">
+        <input type="tel" name="phone" pattern="[0-9]{10}" autocomplete="off"/><br>
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label>address</label>
+         </div>
+      <div class="col-75">
+        <textarea name="address" placeholder="Enter address here..."></textarea><br>
+        </div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label for="pincode">pincode</label>
+		 </div>
+      <div class="col-75">
+		<input type="number" name="pincode" id="id_pincode"  maxlength="6"/><br>
+		</div>
+        </div>
+    <div class="row">
+      <div class="col-25"><label for="email">Email</label>
+		 </div>
+      <div class="col-75">
+		<input type="email" name="Email" id="id_Email"/><br>
+		</div>
+        </div> 
+    <div class="row">
+      <div class="col-25"><label>firstname</label>
+        </div>
+      <div class="col-75">
+        <select name="Education">
+        <option value="BE">BE</option>
+        <option value="Msc_IT">Msc.IT</option> 
+        <option value="Bsc_IT">Bsc.IT</option> 
+        <option value="graduation">graduation</option> 
+        </select><br>
+        </div>
+        </div>
+	
+    <div class="row">
+      <div class="col-25"><label>Hobbies</label><br>
+         </div>
+      <div class="col-75">
+        <input type="checkbox" name="Hobbies[]" value="sports">Sports<br>
+        <input type="checkbox" name="Hobbies[]" value="Reading"> Reading<br>
+        <input type="checkbox" name="Hobbies[]" value="singing" checked>singing<br>
+        <input type="checkbox" name="Hobbies[]" value="dancing" >dancing<br>
+      </div>
+ 
+ <input type="submit" value="Submit"> 
+</p>
+        </fieldset>
+		</form>
+		</body>
+		</html>

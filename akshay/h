@@ -1,0 +1,9 @@
+<table border="1" width="100%">
+<tr>
+<td><a href="image.html" class="a">Home</td>
+<td><a href="Form.php" class="a">Login</td>
+<td><a href="" class="a">List</td>
+<td><a href="" class="a">Logout</td>
+
+</tr>
+</table>
